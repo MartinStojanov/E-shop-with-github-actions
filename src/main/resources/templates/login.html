@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<th:block>
+<form th:method="POST" th:action="@{/login}">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username"><br/>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password"><br/>
+
+    <div th:if="${hasError}">
+        <div th:text="${error}" class="text-danger"></div>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+<a href="/register" class="btn btn-block btn-light">Register here</a>
+</th:block>
