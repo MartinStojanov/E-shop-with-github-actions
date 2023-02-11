@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/e-shop-springboot.jar e-shop-springboot.jar
-ENTRYPOINT ["java", "-jar","e-shop-springboot.jar"]
+ADD target/blog-api-docker.jar blog-api-docker.jar
+ENTRYPOINT ["java", "-jar","blog-api-docker.jar"]
 EXPOSE 9090
