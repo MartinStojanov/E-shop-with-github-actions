@@ -76,7 +76,7 @@
     </dependencies>
 
     <build>
-        <finalName>e-shop-springboot</finalName>
+        <finalName>blog-api-docker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
